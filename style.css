@@ -1,0 +1,187 @@
+/*
+Background
+
+#f2f2f2
+#2e3458
+#33b5e5
+#006a92
+#3e3e3e
+#fc8700
+#ffffff
+#d3eef7
+#00507c
+#868686
+#832028
+#517a38
+
+Font
+
+#1a1a1a
+#3e3e3e
+#656565
+#868686
+#ffffff
+
+*/
+
+.std_none {
+  font-size: 12px;
+}
+
+.std_AA {
+  font-size: 16px;
+}
+
+.std_AAA {
+  font-size: 18px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  font-size: 12px;
+  /*background-color: #33b5e5;*/
+  background-color: #f2f2f2;
+}
+.wrap {
+  max-width: 650px;
+  margin: 0 auto;
+  padding:20px;
+}
+.inp {
+  margin: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.sampletext {
+  border: 1px solid #fff;
+  width: 330px;
+  padding: 20px;
+  background-color: #d75626;
+  margin: 10px;
+  text-align: center;
+  color: #000000;
+}
+h1 {
+  font-size: 16pt;
+  font-weight: 300;
+  margin-top: 0;
+}
+p {
+  font-size: 12pt;
+  font-weight: 300;
+}
+small {
+  font-size: 10pt;
+}
+
+.bgcol {
+  padding: 10px;
+  border: 1px solid #fff;
+  margin:3px;
+  float:left;
+}
+
+.fgcol {
+  padding: 10px;
+  /*background-color: rgba(0, 0, 0, 0.1);*/
+  
+}
+.col1{
+   color: #3e3e3e;
+}
+.col2{
+   color: #656565;
+}
+.col3{
+   color: #868686;
+}
+.col4{
+   color: #ffffff;
+}
+.basesample{
+  color:#3e3e3e;
+  background-color: #fafafa;
+}
+
+.sample1{
+  background-color: #f2f2f2;
+}
+
+.sample2{
+  background-color: #2e3548;
+}
+
+.sample3{
+  background-color: #33b5e5;
+}
+
+.sample4{
+  background-color: #006a92;
+}
+.sample5{
+  background-color: #3e3e3d;
+}
+
+.sample6{
+  background-color: #fc8700;
+}
+.sample7{
+  background-color: #fafafa;
+}
+.sample8{
+  background-color: #ffffff;
+}
+.sample9{
+  background-color: #d3eef7;
+}
+.sample10{
+  background-color: #00507c;
+}
+.sample11{
+  background-color: #868686;
+}
+.sample12{
+  background-color: #832028;
+}
+.sample13{
+  background-color: #517a38;
+}
+
+
+.convcol1, .convcol2{
+  padding:3px;
+}
+#convertoverlay{
+  margin:3px;
+  padding: 10px;
+  /*background-color: rgba(0, 0, 0, 0.1);*/
+}
+
+#convert{
+  margin-top:100px;
+}
+#convert,
+#convert2,
+#convertadjusted{
+  /*margin:3px;*/
+  padding: 10px;
+ border: 1px solid #fff;
+}
+.left{
+  float: left;
+ 
+}
+.right{
+  float: right;
+}
+.clear{
+  clear:both;
+}
+
+.paletteItem {
+  padding: 15px;
+  margin: 3px;
+  display: inline-block;
+  color: #000;
+}

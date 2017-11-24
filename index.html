@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html ng-app="plunker">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>AngularJS Plunker</title>
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <link rel="stylesheet" href="style.css" />
+
+    <script data-require="angular.js@1.2.x" src="https://code.angularjs.org/1.2.28/angular.js" data-semver="1.2.28"></script>
+    <script data-require="jquery@2.1.1" data-semver="2.1.1" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="colours.js"></script>
+    <script src="script.js"></script>
+  </head>
+
+  <body ng-controller="colourCtrl">
+    <div class="wrap">
+      <div>
+          <button ng-click="changestandard('none')">Revert</button>
+          <button ng-click="changestandard('A')">Minimal</button>
+          <button ng-click="changestandard('AA')">AA standard</button>
+          <button ng-click="changestandard('AAA')">AAA standard</button>
+          <button ng-click="reversecolours()">Swap BG/FG</button>
+      </div>    
+        
+      <!--<div class="left col1">
+        <div class="bgcol sample1 {{'std_' + wai.standard}}" wai-standard="{{wai.standard}}">
+				 1: {{standardChosen}} <br> {{BG}}<br>{{FG}}
+				</div>
+        <div class="bgcol sample2 {{'std_' + wai.standard}}" wai-standard="{{wai.standard}}">
+				 2: {{standardChosen}} <br> {{BG}}<br>{{FG}}
+        </div>
+        <div class="bgcol sample3 {{'std_' + wai.standard}}" wai-standard="{{wai.standard}}">
+				 3: {{standardChosen}} <br> {{BG}}<br>{{FG}}
+        </div>
+        <div class="bgcol sample4 {{'std_' + wai.standard}}" wai-standard="{{wai.standard}}">
+				 4: {{standardChosen}} <br> {{BG}}<br>{{FG}}
+        </div>
+        <div class="bgcol sample5 {{'std_' + wai.standard}}" wai-standard="{{wai.standard}}">
+				 5: {{standardChosen}} <br> {{BG}}<br>{{FG}}
+        </div>
+        <div class="bgcol sample6 {{'std_' + wai.standard}}" wai-standard="{{wai.standard}}">
+				 6: {{standardChosen}} <br> {{BG}}<br>{{FG}}
+        </div>
+        <div class="bgcol sample7 {{'std_' + wai.standard}}" wai-standard="{{wai.standard}}">
+				7: {{standardChosen}} <br> {{BG}}<br>{{FG}}
+        </div>
+        <div class="bgcol sample8 {{'std_' + wai.standard}}" wai-standard="{{wai.standard}}">
+				 8: {{standardChosen}} <br> {{BG}}<br>{{FG}}
+        </div>
+        <div class="bgcol sample9 {{'std_' + wai.standard}}" wai-standard="{{wai.standard}}">
+				 9: {{standardChosen}} <br> {{BG}}<br>{{FG}}
+        </div>
+        <div class="bgcol sample10 {{'std_' + wai.standard}}" wai-standard="{{wai.standard}}">
+				 10: {{standardChosen}} <br> {{BG}}<br>{{FG}}
+        </div>
+        <div class="bgcol sample11 {{'std_' + wai.standard}}" wai-standard="{{wai.standard}}">
+				 11: {{standardChosen}} <br> {{BG}}<br>{{FG}}
+        </div>
+        <div class="bgcol sample12 {{'std_' + wai.standard}}" wai-standard="{{wai.standard}}">
+				 12: {{standardChosen}} <br> {{BG}}<br>{{FG}}
+        </div>
+        <div class="bgcol sample13 {{'std_' + wai.standard}}" wai-standard="{{wai.standard}}">
+				 13: {{standardChosen}} <br> {{BG}}<br>{{FG}}
+        </div>
+      </div>-->
+      
+
+    </div>
+    
+  
+    <hr/>
+    
+    <div ng-repeat="col in colours" class="paletteItem" ng-class="'std_' + {{wai.standard}}" ng-style="{'background-color': '#'+col}" wai-standard="{{wai.standard}}"> #{{col}}</div>
+  </body>
+</html>
